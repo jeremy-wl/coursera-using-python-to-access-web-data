@@ -1,0 +1,11 @@
+.idea
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+tmp/**/*
+tmp/*
+*.swp
+*~
+.DS_Store
