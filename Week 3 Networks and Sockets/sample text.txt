@@ -1,0 +1,9 @@
+This idiom works because tuples are compared lexicographically; the first items are compared; if they are the same then the second items are compared, and so on.
+
+It is not strictly necessary in all cases to include the index i in the decorated list. Including it gives two benefits:
+
+The sort is stable - if two items have the same key, their order will be preserved in the sorted list.
+The original items do not have to be comparable because the ordering of the decorated tuples will be determined by at most the first two items. So for example the original list could contain complex numbers which cannot be sorted directly.
+Another name for this idiom is Schwartzian transform, after Randal L. Schwartz, who popularized it among Perl programmers.
+
+For large lists and lists where the comparison information is expensive to calculate, and Python versions before 2.4, DSU is likely to be the fastest way to sort the list. For 2.4 and later, key functions provide the same functionality.
