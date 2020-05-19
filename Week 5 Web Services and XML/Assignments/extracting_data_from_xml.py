@@ -26,4 +26,4 @@ print('Sum:', sum)
 # Retrieving http://python-data.dr-chuck.net/comments_42.xml
 # Retrieved 4204 characters
 # Count: 50
-# Sum: 2482
+# Sum: 2553
